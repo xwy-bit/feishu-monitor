@@ -43,6 +43,11 @@ def load_webhook():
 def cli(ctx, command):
     """Feishu Monitor CLI"""
     if ctx.invoked_subcommand is None:
+        # 检查是否是重新登录
+        if command[0:1] == ("login",):
+            ctx.invoke(login)
+            return
+
         # 没有子命令时，默认执行 run
         webhook = load_webhook()
         if not webhook:
