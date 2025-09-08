@@ -32,7 +32,18 @@ e.g. https://open.feishu.cn/open-apis/bot/v2/hook/abcde-12345-67890-fghij-09876
 feishu <your_command>
 ```
 
-e.g. feishu python run.py
+e.g. 
+```
+feishu python -c "import time;time.sleep(10)"
+```
+This will run the command and send the output to your feishu group.
+![image.png](asset/feishu_common_example.png)
+
+```
+feishu python -c "import time;time.sleep(10);raise ValueError("test")"
+```
+This will send the error to your feishu group.
+![image.png](asset/feishu_error_example.png)
 
 ## 🤝 Contributing
 
