@@ -10,19 +10,9 @@ Feishu Monitor is a tool designed to monitor and manage activities within the Fe
 
 ## 🚀 Installation
 
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/xwy-bit/feishu-monitor.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd feishu-monitor
-    ```
-3. Install dependencies:
-    ```bash
-    pip install .
-    ```
+```bash
+pip install git+https://github.com/xwy-bit/feishu-monitor.git
+```
 
 ## 🛠️ Usage
 
