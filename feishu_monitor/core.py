@@ -17,7 +17,7 @@ def push_report(web_hook, content):
     except Exception as e:
         print("[ERROR] 发送飞书消息失败:", e)
 
-def run_and_monitor(cmd, web_hook, idle_timeout=60):
+def run_and_monitor(cmd, web_hook, idle_timeout=60 * 5):
     """运行命令并监控输出和退出"""
     process = subprocess.Popen(
         cmd,
